@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="6-month expert course on Contract Drafting & Freelancing by Lawctopus Law School. Draft 24+ real contracts, build a portfolio, and start freelancing on Upwork & LinkedIn." />
+  
+  <title>Lawctopus Law School</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<a href="#lead-form-section" id="float-cta" aria-label="Enroll now — opens registration form">
+  <span class="pulse-dot" aria-hidden="true"></span> Enroll Now
+</a>
+
+<div id="modal-overlay" hidden aria-hidden="true"></div>
+
+
+<div id="lead-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden aria-hidden="true">
+
+  <div class="modal-card">
+
+    <button id="modal-close" aria-label="Close enrollment form">✕</button>
+    <h3 id="modal-title">Reserve Your Seat</h3>
+    <p class="form-sub">Fill in your details and our team will reach out within 24 hours with the payment link and onboarding details.</p>
+    <form id="lead-form" novalidate aria-label="Course enrollment form">
+      <div class="form-field">
+        <label for="m-name">Full Name <span aria-hidden="true">*</span></label>
+        <input type="text" id="m-name" name="name" autocomplete="name" required
+               placeholder="e.g. Priya Mehta" aria-required="true" />
+        <span class="field-error" role="alert" hidden></span>
+      </div>
+
+      <div class="form-field">
+        <label for="m-email">Email Address <span aria-hidden="true">*</span></label>
+        <input type="email" id="m-email" name="email" autocomplete="email" required
+               placeholder="you@example.com" aria-required="true" />
+        <span class="field-error" role="alert" hidden></span>
+      </div>
+
+      <div class="form-field">
+        <label for="m-phone">Mobile Number <span aria-hidden="true">*</span></label>
+        <input type="tel" id="m-phone" name="phone" autocomplete="tel"
+               placeholder="10-digit Indian number" required aria-required="true" />
+        <span class="field-error" role="alert" hidden></span>
+      </div>
+      <button type="submit" class="btn btn-primary form-submit">Reserve My Seat →</button>
+      <p class="form-privacy">🔒 We never share your details. No spam, ever.</p>
+    </form>
+
+    <div class="form-success" id="form-success-modal" hidden role="status" aria-live="polite">
+
+      <div class="success-icon">🎉</div>
+      <h4>You're in! Seat Reserved.</h4>
+      <p>Our team will email you within 24 hours with payment details and next steps. Check your inbox!</p>
+
+    </div>
+  </div>
+</div>
+
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="#main-content" class="logo" aria-label="Lawctopus home"><span>law</span>ctopus</a>
+    <div class="nav-right">
+      <span class="nav-scarcity" aria-hidden="true">⏰ Closes June 30 · Limited seats</span>
+      <button class="btn btn-primary nav-cta" data-modal="open" aria-haspopup="dialog">Enroll Now →</button>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="container">
+
+    <div class="scarcity-bar" role="alert" aria-live="polite">
+      <span class="pulse-dot" aria-hidden="true"></span>
+      Only limited seats available · Registration closes June 30, 2026 · Next batch after 6 months
+    </div>
+
+    <div class="hero-badge">🗓 July 1 – December 31, 2026</div>
+
+    <h1 id="hero-heading">
+      Master <em>Contract Drafting</em><br>
+      and Build a Freelance Career
+    </h1>
+
+    <p class="hero-sub">
+      A 6-month, expert-led online course by Lawctopus Law School — draft 24+ real contracts and start earning on Upwork, LinkedIn &amp; beyond.
+    </p>
+
+    <div class="hero-actions">
+      <button class="btn btn-primary btn-lg" data-modal="open" aria-haspopup="dialog">
+        Reserve My Seat — Free →
+      </button>
+      <a href="#problem" class="btn btn-outline">See Why This Matters ↓</a>
+    </div>
+
+    <p class="hero-note">⏰ 54 live sessions · Industry expert faculty · Certificate + portfolio on completion</p>
+
+    <div id="countdown-block" aria-label="Time remaining until registration closes">
+      <p class="cd-label">Registration closes in</p>
+      <div class="cd-grid" role="timer" aria-live="off">
+        <div class="cd-unit"><span class="cd-num" id="cd-days">00</span><span class="cd-unit-label">Days</span></div>
+        <div class="cd-unit"><span class="cd-num" id="cd-hours">00</span><span class="cd-unit-label">Hours</span></div>
+        <div class="cd-unit"><span class="cd-num" id="cd-minutes">00</span><span class="cd-unit-label">Minutes</span></div>
+        <div class="cd-unit"><span class="cd-num" id="cd-seconds">00</span><span class="cd-unit-label">Seconds</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="stats-strip" aria-label="Course highlights">
+  <div class="container stats-inner">
+    <div class="stat-item"><div class="stat-num">6</div><span class="stat-label">Months</span></div>
+    <div class="stat-item"><div class="stat-num">54</div><span class="stat-label">Live Sessions</span></div>
+    <div class="stat-item"><div class="stat-num">24+</div><span class="stat-label">Real Contracts</span></div>
+    <div class="stat-item"><div class="stat-num">1000+</div><span class="stat-label">Students Trained</span></div>
+    <div class="stat-item"><div class="stat-num">100%</div><span class="stat-label">Online</span></div>
+  </div>
+</div>
+
+<section class="problem-section" id="problem" aria-labelledby="problem-heading">
+  <div class="container">
+    <span class="eyebrow">The Real Problem</span>
+    <h2 class="section-title section-title-white" id="problem-heading">
+      Why Most Law Students Struggle<br>with Contract Drafting
+    </h2>
+    <p class="section-sub section-sub-muted">
+      If you've ever felt unready to draft a real contract — you're not alone. The system wasn't designed to teach this.
+    </p>
+
+    <div class="problem-grid">
+      <ul class="problem-list" aria-label="Common problems faced by law students">
+        <li>
+          <div class="prob-icon" aria-hidden="true">📚</div>
+          <div class="prob-text">
+            <strong>Only theory-based learning</strong>
+            <span>Law school teaches you to analyse contracts, not draft them from scratch.</span>
+          </div>
+        </li>
+        <li>
+          <div class="prob-icon" aria-hidden="true">🚫</div>
+          <div class="prob-text">
+            <strong>No practical drafting exposure</strong>
+            <span>Most graduates have never written a single enforceable clause on their own.</span>
+          </div>
+        </li>
+        <li>
+          <div class="prob-icon" aria-hidden="true">🗺</div>
+          <div class="prob-text">
+            <strong>No freelancing direction</strong>
+            <span>Nobody tells you how to turn drafting skills into freelance income on Upwork or LinkedIn.</span>
+          </div>
+        </li>
+        <li>
+          <div class="prob-icon" aria-hidden="true">📁</div>
+          <div class="prob-text">
+            <strong>No portfolio at graduation</strong>
+            <span>You leave college with a degree but nothing concrete to show clients or employers.</span>
+          </div>
+        </li>
+        <li>
+          <div class="prob-icon" aria-hidden="true">💸</div>
+          <div class="prob-text">
+            <strong>Missed income opportunities</strong>
+            <span>Contract drafting is a high-demand, high-paying skill — most lawyers never tap it.</span>
+          </div>
+        </li>
+      </ul>
+
+      <div class="problem-visual" aria-label="Average law graduate's drafting readiness">
+        <p class="pv-title">"The average law graduate's drafting readiness"</p>
+        <div class="pv-stat"><span class="ps-label">Real contracts drafted in college</span><span class="ps-val">0</span></div>
+        <div class="pv-stat"><span class="ps-label">Freelancing clients at graduation</span><span class="ps-val">0</span></div>
+        <div class="pv-stat"><span class="ps-label">Portfolio pieces to show</span><span class="ps-val">0</span></div>
+        <div class="pv-stat"><span class="ps-label">Practical drafting feedback received</span><span class="ps-val">Rare</span></div>
+        <div class="pv-stat"><span class="ps-label">Income from legal drafting skills</span><span class="ps-val">₹0</span></div>
+      </div>
+    </div>
+
+    <div class="section-cta">
+      <button class="btn btn-primary btn-lg" data-modal="open" aria-haspopup="dialog">
+        Fix This — Reserve My Seat →
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="solution" aria-labelledby="solution-heading">
+  <div class="container">
+    <span class="eyebrow">The Fix</span>
+    <h2 class="section-title" id="solution-heading">What This Course Solves</h2>
+    <p class="section-sub">One structured 6-month program that gives you the practical skills, the portfolio, and the freelancing roadmap — all in one place.</p>
+
+    <div class="solution-grid">
+      <div class="solution-card">
+        <div class="sol-icon" aria-hidden="true">📝</div>
+        <h3>24+ Real Contracts</h3>
+        <p>Draft contracts that are actually used in practice — not textbook exercises. Sale deeds, NDAs, employment agreements, international contracts and more.</p>
+      </div>
+      <div class="solution-card">
+        <div class="sol-icon" aria-hidden="true">🎙</div>
+        <h3>Live Drafting Practice</h3>
+        <p>54 live sessions with expert feedback. Not pre-recorded videos — real-time practice, instructor critique, and peer review on your actual drafts.</p>
+      </div>
+      <div class="solution-card">
+        <div class="sol-icon" aria-hidden="true">💼</div>
+        <h3>Freelancing Roadmap</h3>
+        <p>A dedicated module on building your Upwork and LinkedIn presence, pricing your services, writing winning proposals, and landing your first clients.</p>
+      </div>
+      <div class="solution-card">
+        <div class="sol-icon" aria-hidden="true">📁</div>
+        <h3>Portfolio Building</h3>
+        <p>Graduate with a ready-to-share portfolio of 24+ contracts. Proof of your expertise, not just a certificate on a wall.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="outcomes-section" aria-labelledby="outcomes-heading">
+  <div class="container">
+    <span class="eyebrow">What You Will Achieve</span>
+    <h2 class="section-title section-title-white" id="outcomes-heading">🔥 Outcomes You Will Get</h2>
+    <p class="section-sub section-sub-muted">By the end of this course, here is exactly where you will stand.</p>
+
+    <div class="outcomes-grid">
+      <div class="outcome-item">
+        <div class="outcome-check" aria-hidden="true">✓</div>
+        <div>
+          <strong>Start freelancing as a contract drafter</strong>
+          <span>Get paid for legal work on Upwork, LinkedIn, and freelance marketplaces</span>
+        </div>
+      </div>
+      <div class="outcome-item">
+        <div class="outcome-check" aria-hidden="true">✓</div>
+        <div>
+
+          <strong>Build a client-ready portfolio</strong>
+          <span>24+ real contracts you drafted — tangible proof of expertise</span>
+        </div>
+      </div>
+      <div class="outcome-item">
+        <div class="outcome-check" aria-hidden="true">✓</div>
+        <div>
+          <strong>Write real-world legal contracts confidently</strong>
+          <span>From sale deeds to international agreements, drafted to professional standards</span>
+        </div>
+      </div>
+      <div class="outcome-item">
+        <div class="outcome-check" aria-hidden="true">✓</div>
+        <div>
+          <strong>Get Upwork/LinkedIn-ready profile</strong>
+          <span>Optimised profile, proposal templates, and pricing strategy in hand</span>
+        </div>
+      </div>
+      <div class="outcome-item">
+        <div class="outcome-check" aria-hidden="true">✓</div>
+        <div>
+          <strong>Earn from your legal degree</strong>
+          <span>Past students recovered course fees within 45 days of completion</span>
+        </div>
+      </div>
+      <div class="outcome-item">
+        <div class="outcome-check" aria-hidden="true">✓</div>
+        <div>
+
+          <strong>Add a high-income skill to your practice</strong>
+          <span>Whether you're in litigation, corporate, or just starting out</span>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+</section>
+
+<section class="section section-dark" aria-labelledby="ba-heading">
+  <div class="container">
+    <span class="eyebrow">Transformation</span>
+    <h2 class="section-title" id="ba-heading">Before vs. After This Course</h2>
+    <p class="section-sub section-sub-muted">This is the gap the course closes.</p>
+
+    <div class="ba-grid">
+      <div class="ba-col ba-before">
+        <div class="ba-label">❌ Before</div>
+        <ul class="ba-list" aria-label="Situation before taking the course">
+          <li>No drafting skills beyond textbooks</li>
+          <li>Zero practical contracts written</li>
+          <li>No freelancing direction or strategy</li>
+          <li>Empty portfolio at graduation</li>
+          <li>No idea how to find clients</li>
+          <li>No income from legal skills</li>
+        </ul>
+      </div>
+
+      <div class="ba-arrow" aria-hidden="true">→</div>
+      <div class="ba-col ba-after">
+        <div class="ba-label">✅ After</div>
+        <ul class="ba-list" aria-label="Situation after completing the course">
+          <li>24+ real contracts drafted &amp; reviewed</li>
+          <li>Hands-on practice on industry contracts</li>
+          <li>Complete freelance-ready roadmap</li>
+          <li>Strong portfolio to share with clients</li>
+          <li>Upwork &amp; LinkedIn profile live and ready</li>
+          <li>First clients and income possible in 30–60 days</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-box" aria-hidden="true"><span>📋</span></div>
+      <div>
+        <span class="eyebrow">About the Course</span>
+        <h2 class="section-title" id="about-heading">Expert-Level Training in Contract Drafting &amp; Freelancing</h2>
+        <p style="color:var(--gray);font-size:16px;margin-bottom:10px;line-height:1.7;">
+          Lawctopus Law School's flagship program designed for legal professionals who want to move beyond textbooks and start doing real, billable legal work.
+        </p>
+
+
+        <p style="color:var(--gray);font-size:16px;line-height:1.7;">
+          Over six months, you will draft actual contracts used in practice — from sale deeds to international agreements — and learn how to market yourself as a freelance contract drafter.
+        </p>
+        <div class="about-features">
+          <div class="about-feat">
+            <div class="feat-icon" aria-hidden="true">🎓</div>
+            <div class="feat-text">
+              <strong>Practicing Lawyers as Mentors</strong>
+              <span>Industry experts with real drafting experience — not just academics</span>
+            </div>
+          </div>
+
+          <div class="about-feat">
+            <div class="feat-icon" aria-hidden="true">📝</div>
+
+            <div class="feat-text">
+              <strong>Real Industry Contracts Used</strong>
+              <span>You practice on actual contract templates used by businesses and law firms</span>
+            </div>
+          </div>
+          <div class="about-feat">
+            <div class="feat-icon" aria-hidden="true">💼</div>
+            <div class="feat-text">
+              <strong>Freelancing Roadmap Included</strong>
+
+              <span>Get work on Upwork, LinkedIn &amp; freelance platforms from Day 1</span>
+            </div>
+          </div>
+          <div class="about-feat">
+            <div class="feat-icon" aria-hidden="true">🖥</div>
+            <div class="feat-text">
+              <strong>54 Live Interactive Sessions</strong>
+              <span>Ask questions and get personal feedback — not pre-recorded videos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="curriculum-heading">
+  <div class="container">
+    <span class="eyebrow">Curriculum</span>
+    <h2 class="section-title" id="curriculum-heading">What You Will Learn</h2>
+    <p class="section-sub">Six months of structured, practical training split into three clear phases.</p>
+
+    <div class="modules-grid">
+      <div class="module-card">
+        <div class="module-phase">Phase 1 · Months 1–2</div>
+        <h3>Fundamentals of Contract Drafting</h3>
+        <p>Understand the anatomy of a contract, identify contract types in the real world, and redraft a sale deed entirely on your own.</p>
+      </div>
+      <div class="module-card">
+        <div class="module-phase">Phase 2 · Months 3–4</div>
+        <h3>Complex Contracts in Practice</h3>
+        <p>Draft website terms, employment agreements, NDAs, international commercial contracts, and 15+ more real-world contract types.</p>
+      </div>
+      <div class="module-card">
+        <div class="module-phase">Phase 3 · Months 5–6</div>
+        <h3>Freelancing &amp; Client Acquisition</h3>
+        <p>Set up profiles on Upwork and LinkedIn, price your services, win your first clients, and build a sustainable freelance practice.</p>
+      </div>
+      <div class="module-card">
+        <div class="module-phase">Throughout the Course</div>
+        <h3>9 Unique Course Elements</h3>
+        <p>Live Q&amp;A, peer review sessions, contract critique workshops, mock client briefs, templates library, and mentorship calls.</p>
+      </div>
+      <div class="module-card">
+        <div class="module-phase">Bonus</div>
+        <h3>International Agreements</h3>
+        <p>Cross-border contracts — jurisdiction clauses, governing law, arbitration clauses, and drafting for foreign clients.</p>
+      </div>
+      <div class="module-card">
+        <div class="module-phase">Capstone</div>
+        <h3>Portfolio of 24+ Contracts</h3>
+        <p>Graduate with a real, reviewer-ready portfolio — proof of expertise, not just a certificate.</p>
+      </div>
+    </div>
+
+    <div class="section-cta">
+      <button class="btn btn-primary btn-lg" data-modal="open" aria-haspopup="dialog">
+        Join the Next Batch →
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="audience-heading">
+  <div class="container">
+    <span class="eyebrow">Who Should Join</span>
+    <h2 class="section-title" id="audience-heading">This Course is Built For You If…</h2>
+
+    <div class="audience-cards">
+      <div class="audience-card">
+        <div class="audience-icon" aria-hidden="true">🎓</div>
+        <h3>Law Students</h3>
+        <p>In 3rd year or above and want a marketable skill before graduation.</p>
+      </div>
+      <div class="audience-card">
+        <div class="audience-icon" aria-hidden="true">⚖️</div>
+        <h3>Junior Lawyers</h3>
+        <p>Practising but looking to add a high-income skill to your work.</p>
+      </div>
+      <div class="audience-card">
+        <div class="audience-icon" aria-hidden="true">💻</div>
+        <h3>Legal Freelancers</h3>
+        <p>Already on Upwork but want to increase your rates and credibility.</p>
+      </div>
+      <div class="audience-card">
+        <div class="audience-icon" aria-hidden="true">🏠</div>
+        <h3>Work-from-Home Seekers</h3>
+        <p>Legal professionals who want flexibility and remote income.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="timeline-heading">
+  <div class="container">
+    <span class="eyebrow">Course Structure</span>
+    <h2 class="section-title" id="timeline-heading">Your 6-Month Journey</h2>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot" aria-hidden="true">1</div>
+        <div class="tl-body">
+          <h3>Month 1 — Understanding Contracts</h3>
+          <p>Learn what makes a contract legally binding, identify types in real documents, spot drafting errors, and understand professional standards.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot" aria-hidden="true">2</div>
+        <div class="tl-body">
+          <h3>Month 2 — Sale Deeds &amp; Property Contracts</h3>
+          <p>Redraft a complete sale deed independently. Receive structured feedback on clarity, enforceability, and presentation.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot" aria-hidden="true">3</div>
+        <div class="tl-body">
+          <h3>Month 3 — Business &amp; Employment Contracts</h3>
+          <p>Draft NDAs, employment agreements, vendor agreements, and SaaS terms. Learn to handle ambiguous client briefs.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot" aria-hidden="true">4</div>
+        <div class="tl-body">
+          <h3>Month 4 — International &amp; Tech Contracts</h3>
+          <p>Website terms &amp; conditions, privacy policies, international sale agreements with cross-border clause strategy.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot" aria-hidden="true">5</div>
+        <div class="tl-body">
+          <h3>Month 5 — Freelancing Setup</h3>
+          <p>Build your Upwork and LinkedIn profiles, write proposals that win, set competitive rates, and land first paying clients.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot" aria-hidden="true">6</div>
+        <div class="tl-body">
+          <h3>Month 6 — Scale &amp; Sustain</h3>
+          <p>Manage multiple clients, handle revisions, build long-term relationships, and systemise your freelance practice.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <span class="eyebrow">Student Stories</span>
+    <h2 class="section-title" id="testimonials-heading">What Past Participants Say</h2>
+
+    <div class="testimonial-grid">
+      <article class="testimonial-card">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>"Before this course I had never drafted a contract from scratch. By month three I had already drafted six contracts for real clients. The live sessions make all the difference."</blockquote>
+        <div class="testimonial-author">
+          <div class="avatar" aria-hidden="true">P</div>
+          <div class="author-info"><strong>Priya Mehta</strong><span>Law Graduate, Mumbai</span></div>
+        </div>
+
+      </article>
+
+      <article class="testimonial-card">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>"I was a 2nd-year advocate with decent courtroom skills but no clue about drafting. This course gave me a portfolio I'm proud of and two retainer clients on Upwork."</blockquote>
+        <div class="testimonial-author">
+          <div class="avatar" aria-hidden="true">R</div>
+          <div class="author-info"><strong>Rahul Sharma</strong><span>Advocate, Delhi</span></div>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>"The freelancing module alone is worth the course fee. Within 45 days of finishing I had recovered my investment from client work. Absolutely recommended."</blockquote>
+        <div class="testimonial-author">
+          <div class="avatar" aria-hidden="true">A</div>
+          <div class="author-info"><strong>Anjali Rao</strong><span>LLB Final Year, Bangalore</span></div>
+        </div>
+
+      </article>
+
+    </div>
+
+    <div class="section-cta">
+
+      <button class="btn btn-primary btn-lg" data-modal="open" aria-haspopup="dialog">
+        Get These Results Too →
+      </button>
+
+    </div>
+
+  </div>
+</section>
+
+
+<div class="trust-section" aria-label="Course credibility highlights">
+
+  <div class="container">
+
+    <div class="trust-grid">
+
+      <div class="trust-item">
+
+        <div class="trust-num">1000+</div>
+        <div class="trust-desc">Students Trained</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-num">100%</div>
+        <div class="trust-desc">Practicing Lawyer Mentors</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-num">24+</div>
+        <div class="trust-desc">Real Industry Contracts</div>
+
+      </div>
+      <div class="trust-item">
+
+        <div class="trust-num">✓</div>
+
+        <div class="trust-desc">Certificate + Portfolio Included</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section class="lead-form-section" id="lead-form-section" aria-labelledby="form-heading">
+  <div class="container">
+    <span class="eyebrow text-center" style="display:block;">Get Started</span>
+    <h2 class="section-title text-center" id="form-heading">Reserve Your Seat Today</h2>
+    <p class="section-sub text-center mx-auto">Fill in your details and our team will reach out within 24 hours with payment details and onboarding info.</p>
+
+    <div class="lead-form-box" id="enroll">
+      <!-- Pricing badges -->
+      <div class="pricing-badge-row" style="margin-bottom:24px;">
+        <span class="pricing-badge badge-popular">🔥 Most Popular</span>
+        <span class="pricing-badge badge-value">⭐ Best Value</span>
+        <span class="pricing-badge badge-save">💰 Save ₹3,000</span>
+      </div>
+
+      <div style="text-align:center;margin-bottom:24px;padding-bottom:20px;border-bottom:1.5px solid #E5E7EB;">
+        <div style="font-size:14px;color:var(--gray);text-decoration:line-through;margin-bottom:4px;">Regular: ₹11,999</div>
+        <div style="font-family:var(--display);font-size:48px;font-weight:900;color:var(--orange);line-height:1;">₹8,999</div>
+        <div style="display:inline-block;background:var(--green);color:#fff;font-size:12px;font-weight:700;padding:3px 12px;border-radius:20px;margin-top:8px;">You save ₹3,000 🎉</div>
+        <div style="font-size:11px;color:var(--gray);margin-top:8px;">One-time payment · July 1 – December 31 · 54 live sessions</div>
+      </div>
+
+      <h3>Enter Your Details</h3>
+      <p class="form-sub">Our team will confirm your seat within 24 hours.</p>
+
+      <form id="lead-form-inline" novalidate aria-label="Course enrollment form">
+        <div class="form-field">
+          <label for="f-name">Full Name <span aria-hidden="true">*</span></label>
+          <input type="text" id="f-name" name="name" autocomplete="name" required
+                 placeholder="e.g. Priya Mehta" aria-required="true" />
+          <span class="field-error" role="alert" hidden></span>
+        </div>
+        <div class="form-field">
+          <label for="f-email">Email Address <span aria-hidden="true">*</span></label>
+          <input type="email" id="f-email" name="email" autocomplete="email" required
+                 placeholder="you@example.com" aria-required="true" />
+          <span class="field-error" role="alert" hidden></span>
+        </div>
+        <div class="form-field">
+          <label for="f-phone">Mobile Number <span aria-hidden="true">*</span></label>
+          <input type="tel" id="f-phone" name="phone" autocomplete="tel"
+                 placeholder="10-digit Indian number" required aria-required="true" />
+          <span class="field-error" role="alert" hidden></span>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">Reserve My Seat — ₹8,999 →</button>
+        <p class="form-privacy">🔒 Your information is safe. We will never spam you.</p>
+      </form>
+
+      <div class="form-success" id="form-success-inline" hidden role="status" aria-live="polite">
+        <div class="success-icon">🎉</div>
+        <h4>Seat Reserved Successfully!</h4>
+        <p>Check your email — our team will send payment details and onboarding steps within 24 hours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" aria-labelledby="faq-heading">
+  <div class="container">
+    <span class="eyebrow">Common Questions</span>
+    <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
+
+    <div class="faq-list" role="list">
+      <details>
+        <summary>Who can enroll in this course?</summary>
+        <div class="faq-answer">
+          Anyone with a legal background can enroll — law students (3rd year and above), LLB/LLM graduates, junior advocates, and legal professionals. No prior drafting experience is needed.
+        </div>
+      </details>
+      <details>
+        <summary>Are the sessions recorded? Can I watch them later?</summary>
+        <div class="faq-answer">
+          The primary format is live — you get real-time interaction with faculty. Recording availability should be confirmed directly with Lawctopus at enrollment, as policies may vary by batch.
+        </div>
+      </details>
+      <details>
+        <summary>How much time do I need to commit each week?</summary>
+        <div class="faq-answer">
+          Roughly 4–6 hours per week — live sessions plus practice drafting assignments. The course is designed to fit around your college or work schedule.
+        </div>
+      </details>
+      <details>
+        <summary>Will I be able to get freelance work after this course?</summary>
+        <div class="faq-answer">
+          The course includes a dedicated module on building your freelance presence on Upwork and LinkedIn. Past students have reported getting work within 30–60 days of completing the freelancing module.
+        </div>
+      </details>
+      <details>
+        <summary>Is there a certificate on completion?</summary>
+        <div class="faq-answer">
+          Yes, Lawctopus Law School issues a certificate on successful completion. Combined with your portfolio of 24+ drafted contracts, this gives you tangible proof of your skills.
+        </div>
+      </details>
+      <details>
+        <summary>What is the last date to register?</summary>
+        <div class="faq-answer">
+          Registration closes June 30, 2026. The course runs July 1 – December 31, 2026. Only limited seats per batch — the next batch opens after 6 months.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+
+<section class="final-cta" aria-labelledby="final-cta-heading">
+  <div class="container">
+    <h2 id="final-cta-heading">Your Career in Contract Drafting Starts July 1</h2>
+    <p>Join 1000+ legal professionals who have turned this skill into steady income. Limited seats — registration closes June 30.</p>
+    <div class="final-cta-actions">
+      <button class="btn btn-primary btn-lg" data-modal="open" aria-haspopup="dialog">
+        Reserve My Seat Now →
+      </button>
+      <span class="sub-note">⏰ Closes June 30 · Limited seats · Next batch after 6 months</span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>
+    © 2026 Lawctopus Law School · All rights reserved ·
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Use</a>
+    <a href="https://lawctopus.com" target="_blank" rel="noopener">lawctopus.com</a>
+  </p>
+</footer>
+
+<script src="script.js" defer></script>
+<!-- Inline form validation (separate from modal) -->
+<script>
+(function() {
+  const form    = document.getElementById('lead-form-inline');
+  const success = document.getElementById('form-success-inline');
+  if (!form) return;
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    let valid = true;
+
+    form.querySelectorAll('.field-error').forEach(el => { el.hidden = true; el.textContent = ''; });
+    form.querySelectorAll('input').forEach(el => { el.removeAttribute('aria-invalid'); el.classList.remove('input-error'); });
+
+    const name  = form.querySelector('#f-name');
+    const email = form.querySelector('#f-email');
+    const phone = form.querySelector('#f-phone');
+
+    function err(input, msg) {
+      const span = input.parentElement.querySelector('.field-error');
+      span.textContent = msg; span.hidden = false;
+      input.setAttribute('aria-invalid','true'); input.classList.add('input-error');
+      valid = false;
+    }
+
+    if (!name.value.trim() || name.value.trim().length < 2) err(name, 'Please enter your full name.');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim()))    err(email, 'Please enter a valid email address.');
+    if (!/^[6-9]\d{9}$/.test(phone.value.replace(/\s/g,'')))        err(phone, 'Please enter a valid 10-digit Indian mobile number.');
+
+    if (!valid) { form.querySelector('.input-error')?.focus(); return; }
+
+    const btn = form.querySelector('[type=submit]');
+    btn.textContent = 'Reserving your seat…'; btn.disabled = true;
+
+    setTimeout(function() {
+      form.hidden = true;
+      success.hidden = false;
+    }, 900);
+  });
+})();
+</script>
+
+</body>
+</html>
